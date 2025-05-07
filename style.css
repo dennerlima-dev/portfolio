@@ -210,12 +210,6 @@ button {
   align-items: center;
 }
 
-@media (max-width: 480px) {
-  .sobre-card .foto img {
-    clip-path: polygon(50% 88%, 35% 86%, 25% 79%, 18% 67%, 14% 54%, 13% 40%, 23% 28%, 36% 18%, 52% 13%, 71% 11%, 80% 16%, 82% 30%, 79% 49%, 75% 64%, 67% 75%);
-  }
-}
-
 .svg-wrapper {
   display: flex;
   justify-content: center;
