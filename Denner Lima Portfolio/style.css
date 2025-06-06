@@ -149,6 +149,23 @@ button {
   cursor: pointer;
 }
 
+.botao-download {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.1rem 1.0rem;
+  background: linear-gradient(to right, #0ff, #00f);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botao-download:hover {
+  background: linear-gradient(to right, #1e90ff, #00bfff);
+}
+
+
 #particles-js {
   position: fixed;
   top: 0;
