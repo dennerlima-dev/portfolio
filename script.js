@@ -28,12 +28,14 @@ const traducoes = {
     tituloSobre: "Sobre Mim",
     tituloContato: "Entre em Contato",
     projeto1Titulo: "Sistema de Gerenciamento de Segurança — Projeto Full Stack com Flask e SQL",
-    projeto1Desc: "Aplicação web robusta para as Indústrias Wayne, focada em controle de acesso, gerenciamento de recursos internos e visualização de dados estratégicos. Implementada autenticação com controle de níveis de acesso (funcionários, gerentes e administradores de segurança), sistema completo de CRUD para inventário de equipamentos, veículos e dispositivos de segurança, além de um dashboard dinâmico que centraliza informações operacionais em tempo real. O projeto foi estruturado com Flask, SQLite, Jinja2, HTML, CSS e JavaScript, seguindo boas práticas de modularização, segurança (CSRF, login seguro) e organização do código.",
+    projeto1Desc: "Aplicação web robusta para as Indústrias Wayne (empresa fictícia), focada em controle de acesso, gerenciamento de recursos internos e visualização de dados estratégicos. Implementada autenticação com controle de níveis de acesso (funcionários, gerentes e administradores de segurança), sistema completo de CRUD para inventário de equipamentos, veículos e dispositivos de segurança, além de um dashboard dinâmico que centraliza informações operacionais em tempo real. O projeto foi estruturado com Flask, SQLite, Jinja2, HTML, CSS e JavaScript, seguindo boas práticas de modularização, segurança (CSRF, login seguro) e organização do código.<br><br><em>Acesso Administrador:<br>usuário: </em>admin<br><em>senha: </em> senha123",
     projeto1Botao: "Ver",
     textoAlternativoFoto: "Foto de Denner Lima",
     logoFone: "Ícone de telefone",
     logoMail: "Ícone de email",
-    logoLinkedin: "Ícone do LinkedIn"
+    logoLinkedin: "Ícone do LinkedIn",
+    botaoCV: "Baixar Currículo",
+    linkCV: "docs/CV_PT.pdf"
   },
   en: {
     titulo: `HEY, I AM <span class="glitch" data-text="DENNER">DENNER LIMA</span>`,
@@ -47,12 +49,14 @@ const traducoes = {
     tituloSobre: "About Me",
     tituloContato: "Get in Touch",
     projeto1Titulo: "Security Management System — Full Stack Project with Flask and SQL (Availabe in Portuguese only)",
-    projeto1Desc: "A robust web application for Wayne Industries(fictional industry), focused on access control, internal resource management, and real-time data visualization. The system features role-based authentication (employees, managers, security admins), a full CRUD interface for managing inventory (equipment, vehicles, security devices), and a dynamic dashboard displaying key operational data. Built with Flask, SQLite, Jinja2, HTML, CSS, and JavaScript, the project follows best practices in code organization, security (CSRF protection, secure login), and modular design.",
+    projeto1Desc: "A robust web application for Wayne Industries (fictional company), focused on access control, internal resource management, and real-time data visualization. The system features role-based authentication (employees, managers, security admins), a full CRUD interface for managing inventory (equipment, vehicles, security devices), and a dynamic dashboard displaying key operational data. Built with Flask, SQLite, Jinja2, HTML, CSS, and JavaScript, the project follows best practices in code organization, security (CSRF protection, secure login), and modular design.<br><br><em>Administrator Access:<br>user: </em>admin<br><em>password: </em> senha123",
     projeto1Botao: "View",
     textoAlternativoFoto: "Denner Lima's picture",
     logoFone: "Fone Icon",
     logoMail: "Mail Icon",
-    logoLinkedin: "LinkedIn Icon"
+    logoLinkedin: "LinkedIn Icon",
+    botaoCV: "Download Resume",
+    linkCV: "docs/CV_EN.pdf"
   }
 };
 
@@ -70,12 +74,14 @@ function trocarIdioma(idioma) {
   document.getElementById("tituloProjetos").innerText = traducoes[idioma].tituloProjetos;
   document.getElementById("tituloContato").innerText = traducoes[idioma].tituloContato;
   document.getElementById("projeto1Titulo").innerText = traducoes[idioma].projeto1Titulo;
-  document.getElementById("projeto1Desc").innerText = traducoes[idioma].projeto1Desc;
+  document.getElementById("projeto1Desc").innerHTML = traducoes[idioma].projeto1Desc;
   document.getElementById("projeto1Botao").innerText = traducoes[idioma].projeto1Botao;
   document.getElementById("textoAlternativoFoto").innerText = traducoes[idioma].textoAlternativoFoto;
   document.getElementById("logoMail").alt = traducoes[idioma].logoMail;
   document.getElementById("logoFone").alt = traducoes[idioma].logoFone;
   document.getElementById("logoLinkedin").alt = traducoes[idioma].logoLinkedin;
+  document.getElementById("botaoCV").innerText = traducoes[idioma].botaoCV;
+  document.getElementById("botaoCV").setAttribute("href", traducoes[idioma].linkCV);
 }
 
 // Eventos de troca de idioma
