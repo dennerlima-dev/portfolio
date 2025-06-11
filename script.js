@@ -35,7 +35,7 @@ const traducoes = {
     logoMail: "Ícone de email",
     logoLinkedin: "Ícone do LinkedIn",
     botaoCV: "Baixar Currículo",
-    linkCV: "docs/CV_PT.pdf"
+    linkCV: "docs/CV_DENNER_PT.pdf"
   },
   en: {
     titulo: `HEY, I AM <span class="glitch" data-text="DENNER">DENNER LIMA</span>`,
@@ -56,7 +56,7 @@ const traducoes = {
     logoMail: "Mail Icon",
     logoLinkedin: "LinkedIn Icon",
     botaoCV: "Download Resume",
-    linkCV: "docs/CV_EN.pdf"
+    linkCV: "docs/CV_DENNER_EN.pdf"
   }
 };
 
